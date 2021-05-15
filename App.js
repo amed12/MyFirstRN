@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component} from 'react';
 import {Image, Text, TextInput, View} from 'react-native';
 
 const App = () => (
@@ -7,6 +7,7 @@ const App = () => (
     <Text>Hellow world</Text>
     <ProfilAchmad />
     <TextInput style={{borderWidth: 1}} />
+    <ProfileAchmad />
   </View>
 );
 
@@ -17,6 +18,16 @@ function ProfilAchmad() {
       style={{width: 100, height: 100}}
     />
   );
+}
+class ProfileAchmad extends Component {
+  render() {
+    return (
+      <View>
+        <ProfilAchmad />
+        <Text>Ini Achmad Fathullah</Text>
+      </View>
+    );
+  }
 }
 
 export default App;
