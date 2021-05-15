@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
 import {View, Text, Image} from 'react-native';
-import styles from './StyleText';
-import me from './me.jpg';
+import styles from '../SampleStyling';
+import me from '../../assets/me.jpg';
 
-export default class FlexBox extends Component {
+export default class FlexBoxExample extends Component {
   render() {
     return (
       <View>

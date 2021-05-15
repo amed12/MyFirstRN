@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {Image, Text, TextInput, View} from 'react-native';
-import styles from './StyleText';
+import styles from '../SampleStyling';
 
 const SampleBasic = () => (
   <View>
@@ -13,7 +13,7 @@ const SampleBasic = () => (
         margin: 20,
       }}
     />
-    <Text style={styles.textBold}>Hellow world</Text>
+    <Text style={styles.textBold}>Hellow world bosq</Text>
     <ProfilAchmad />
     <TextInput style={{borderWidth: 1}} />
     <ProfileAchmad />

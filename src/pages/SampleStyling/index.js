@@ -1,7 +1,7 @@
 import React from 'react';
 import {Image, Text, View} from 'react-native';
-import styles from './StyleText';
-import me from './me.jpg';
+import styles from '../SampleStyling';
+import me from '../../assets/me.jpg';
 
 const SampleStylingBasic = () => {
   return (
@@ -13,7 +13,7 @@ const SampleStylingBasic = () => {
         width: 212,
       }}>
       <Image source={me} style={{width: 188, height: 107, borderRadius: 8}} />
-      <Text style={styles.textBold}>Achmad Fathullah</Text>
+      <Text style={styles.textBold}>Achmad xxx Fathullah</Text>
       <ButtonSave />
     </View>
   );

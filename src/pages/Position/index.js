@@ -1,8 +1,8 @@
 import React from 'react';
 import {Image, StyleSheet, Text, View} from 'react-native';
-import me from './me.jpg';
+import me from '../../assets/me.jpg';
 
-export default function PositionReactNative() {
+export default function Position() {
   return (
     <View style={styles.viewWrapper}>
       <View style={styles.viewBorder}>
