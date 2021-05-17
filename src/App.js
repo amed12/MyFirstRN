@@ -4,6 +4,7 @@ import {Communication} from './pages/Communication';
 import FlexBoxExample from './pages/FlexBoxExample';
 import Position from './pages/Position';
 import PropDynamic from './pages/PropsDynamic';
+import ReactNativeSvg from './pages/ReactNativeSvg';
 import SampleBasic from './pages/SampleComponent';
 import SampleStylingBasic from './pages/SampleStyling';
 import StateDynamic from './pages/StateDynamic';
@@ -22,12 +23,13 @@ const App = () => {
     <View>
       <ScrollView>
         {/* <SampleBasic /> */}
-        <SampleStylingBasic />
+        {/* <SampleStylingBasic /> */}
         {/* {<FlexBoxExample />} */}
         {/* <Position /> */}
         {/* <PropDynamic /> */}
-        <StateDynamic />
-        <Communication />
+        {/* <StateDynamic /> */}
+        {/* <Communication /> */}
+        <ReactNativeSvg />
       </ScrollView>
     </View>
   );
