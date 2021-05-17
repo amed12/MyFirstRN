@@ -5,6 +5,7 @@ import Position from './pages/Position';
 import PropDynamic from './pages/PropsDynamic';
 import SampleBasic from './pages/SampleComponent';
 import SampleStylingBasic from './pages/SampleStyling';
+import StateDynamic from './pages/StateDynamic';
 
 const App = () => {
   /*
@@ -23,7 +24,8 @@ const App = () => {
         {/* <SampleStylingBasic /> */}
         {/* {<FlexBoxExample />} */}
         {/* <Position /> */}
-        <PropDynamic />
+        {/* <PropDynamic /> */}
+        <StateDynamic />
       </ScrollView>
     </View>
   );
