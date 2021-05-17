@@ -4,7 +4,15 @@ import styles from '../SampleStyling';
 import me from '../../assets/me.jpg';
 
 export default class FlexBoxExample extends Component {
+  constructor(props) {
+    super(props);
+    console.log('-> constructor');
+    this.state = {
+      subscriber: 200,
+    };
+  }
   render() {
+    console.log('-> render');
     return (
       <View>
         <View
@@ -28,7 +36,12 @@ export default class FlexBoxExample extends Component {
           <Text>Tentang</Text>
         </View>
         <View
-          style={{flexDirection: 'row', alignItems: 'center', marginTop: 16, marginLeft: 16}}>
+          style={{
+            flexDirection: 'row',
+            alignItems: 'center',
+            marginTop: 16,
+            marginLeft: 16,
+          }}>
           <Image
             source={me}
             style={{
@@ -38,12 +51,29 @@ export default class FlexBoxExample extends Component {
               marginRight: 8,
             }}
           />
-          <View style={{flexDirection:'column',alignItems:'flex-start'}}>
+          <View style={{flexDirection: 'column', alignItems: 'flex-start'}}>
             <Text style={styles.textBold}>Achmad Fathullah</Text>
-            <Text>100k Subscriber</Text>
+            <Text>{this.state.subscriber} Subscriber</Text>
           </View>
         </View>
       </View>
     );
+  }
+
+  componentDidMount() {
+    console.log('-> component did mount');
+    setTimeout(() => {
+      this.setState({
+        subscriber: 400,
+      });
+    }, 2000);
+  }
+
+  componentDidUpdate() {
+    console.log('-> component did update');
+  }
+
+  componentWillUnmount() {
+    console.log('-> component will unmount');
   }
 }
